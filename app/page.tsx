@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col gap-24 px-24 py-16 text-gray-500 antialiased">
-      <header className="z-10 flex flex w-full max-w-5xl flex-col justify-between">
+    <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-6 py-12 text-gray-500 antialiased lg:gap-24 lg:px-24 lg:py-16">
+      <header className="flex flex flex-col justify-between">
         <Link href="/">
           <h1 className="font-medium font-normal tracking-wide text-gray-800">
             Vicent Gozalbes
@@ -12,7 +12,7 @@ export default function Home() {
         <span className="text-gray-400">Web Engineer</span>
       </header>
 
-      <main className="flex flex-col gap-24">
+      <main className="flex flex-col gap-12 lg:gap-24">
         <article className="flex flex-col gap-6">
           <h2 className="font-medium font-normal text-gray-800">Today</h2>
           <p>
@@ -43,11 +43,6 @@ export default function Home() {
             , as Tech Lead, we created the first sports social network which
             garnered thousands of users around the world.
           </p>
-        </article>
-
-        <article className="flex flex-col gap-6">
-          <h2 className="font-medium font-normal text-gray-800">Projects</h2>
-          <p>...</p>
         </article>
 
         <article className="flex flex-col gap-6">
