@@ -32,7 +32,7 @@ export default function Home() {
         <article className="flex flex-col gap-6">
           <h2 className="font-medium font-normal text-gray-800">Previously</h2>
           <p>
-            At{" "}
+            As the Tech Lead at{" "}
             <a
               href="https://www.strands.com"
               className="underline"
@@ -40,8 +40,8 @@ export default function Home() {
             >
               Strands
             </a>
-            , as Tech Lead, we created the first sports social network which
-            garnered thousands of users around the world.
+            , we launched the world&apos;s first sports social network, drawing
+            in nearly a million users globally.
           </p>
         </article>
 
