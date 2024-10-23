@@ -62,7 +62,7 @@ export default function Home() {
         <article className="flex flex-col gap-6">
           <h2 className="font-medium text-gray-800">More</h2>
           <p>
-            You can check out my code on{" "}
+            You can check my code on{" "}
             <a
               href="https://github.com/vigosan"
               className="underline font-medium"
