@@ -49,7 +49,7 @@ export default function Home() {
           <h2 className="font-medium text-gray-800">Projects</h2>
           <div>
             <a href="https://gotwifi.vicent.io" className="font-medium underline">
-              gotwifi.art
+              Gotwifi
             </a>{" "}
             is an application that enhances the WiFi sharing experience by using
             QR codes. It allows you to easily share your WiFi connection with
