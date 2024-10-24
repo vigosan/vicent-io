@@ -9,7 +9,7 @@ export default function Home() {
             Vicent Gozalbes
           </h1>
         </Link>
-        <span className="text-gray-400">Web Engineer</span>
+        <span className="text-gray-500">Web Engineer</span>
       </header>
 
       <main className="flex flex-col gap-12 lg:gap-24">
