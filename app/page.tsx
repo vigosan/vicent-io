@@ -47,15 +47,26 @@ export default function Home() {
 
         <article className="flex flex-col gap-6">
           <h2 className="font-medium text-gray-800">Projects</h2>
-          <div>
-            <a href="https://gotwifi.vicent.io" className="font-medium underline">
-              Gotwifi
-            </a>{" "}
-            is an application that enhances the WiFi sharing experience by using
-            QR codes. It allows you to easily share your WiFi connection with
-            family or guests, adding a personal touch with your favorite photos.
-            Forget about confusing network names and complicated passwords; just
-            scan and connect instantly.
+          <div className="flex flex-col gap-4">
+            <div>
+              <a href="https://discospy.app" className="font-medium underline">
+                DiscoSpy
+              </a>{" "}
+              helps vinyl collectors track records they want to buy with 24/7 automatic monitoring 
+              of Discogs marketplace. Manage your wantlist, get instant Telegram notifications 
+              when desired records become available, and never miss rare pressings or limited 
+              editions again.
+            </div>
+            <div>
+              <a href="https://gotwifi.vicent.io" className="font-medium underline">
+                Gotwifi
+              </a>{" "}
+              is an application that enhances the WiFi sharing experience by using
+              QR codes. It allows you to easily share your WiFi connection with
+              family or guests, adding a personal touch with your favorite photos.
+              Forget about confusing network names and complicated passwords; just
+              scan and connect instantly.
+            </div>
           </div>
         </article>
 
