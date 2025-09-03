@@ -1,7 +1,45 @@
 import Link from "next/link";
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Vicent Gozalbes",
+    jobTitle: "Web Engineer",
+    description: "Full-stack web developer specializing in React and frontend technologies",
+    url: "https://vicent.io",
+    email: "hello@vicent.io",
+    sameAs: [
+      "https://github.com/vigosan",
+      "https://www.twitch.tv/vigosan",
+      "https://www.instagram.com/vigosan"
+    ],
+    worksFor: {
+      "@type": "Organization",
+      name: "Flywire",
+      url: "https://www.flywire.com"
+    },
+    alumniOf: {
+      "@type": "Organization",
+      name: "Strands",
+      url: "https://www.strands.com"
+    },
+    knowsAbout: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "Full-Stack Development",
+      "Frontend Development",
+      "Web Development"
+    ]
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
     <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-6 py-12 text-gray-500 antialiased lg:gap-24 lg:px-24 lg:py-16" style={{fontFamily: 'monospace'}}>
       <header className="flex flex-col justify-between">
         <Link href="/" className="focus:outline-none focus:ring-1 focus:ring-gray-400 rounded">
@@ -86,13 +124,13 @@ export default function Home() {
           </div>
         </article>
 
-        <article className="flex flex-col gap-6">
+        <section className="flex flex-col gap-6">
           <h2 className="font-medium text-gray-800">Contact</h2>
-          <div className="border border-gray-300 p-4" style={{backgroundColor: 'rgba(0,0,0,0.02)'}}>
+          <address className="border border-gray-300 p-4 not-italic" style={{backgroundColor: 'rgba(0,0,0,0.02)'}}>
             <p className="mb-4">→ <a href="mailto:hello@vicent.io" className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1">hello@vicent.io</a></p>
             <p>Available for interesting projects and collaborations.</p>
-          </div>
-        </article>
+          </address>
+        </section>
 
         <article className="flex flex-col gap-6">
           <h2 className="font-medium text-gray-800">More</h2>
@@ -133,5 +171,6 @@ export default function Home() {
         </article>
       </main>
     </div>
+    </>
   );
 }
