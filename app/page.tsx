@@ -56,7 +56,7 @@ export default function Home() {
 
       <main className="flex flex-col gap-8 lg:gap-12">
         <article className="flex flex-col gap-6">
-          <h2 className="font-medium text-gray-800">Today</h2>
+          <h2 className="text-lg font-medium text-gray-800">Today</h2>
           <p>
             I work at{" "}
             <a
@@ -75,7 +75,7 @@ export default function Home() {
         </article>
 
         <article className="flex flex-col gap-6">
-          <h2 className="font-medium text-gray-800">Previously</h2>
+          <h2 className="text-lg font-medium text-gray-800">Previously</h2>
           <p>
             As the Tech Lead at{" "}
             <a
@@ -93,52 +93,70 @@ export default function Home() {
         </article>
 
         <article className="flex flex-col gap-6">
-          <h2 className="font-medium text-gray-800">Projects</h2>
+          <h2 className="text-lg font-medium text-gray-800">Projects</h2>
           <div className="flex flex-col gap-4">
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500">
-              <a 
-                href="https://discospy.app" 
-                className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="DiscoSpy (opens in new tab)"
-              >
-                DiscoSpy
-              </a>{" "}
-              helps vinyl collectors track records they want to buy with 24/7 automatic monitoring 
-              of Discogs marketplace. Manage your wantlist, get instant Telegram notifications 
-              when desired records become available, and never miss rare pressings or limited 
-              editions again.
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a 
+                  href="https://discospy.app" 
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="DiscoSpy (opens in new tab)"
+                >
+                  DiscoSpy
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2024 • Next.js, React, TypeScript</span>
+              </div>
+              <p className="text-gray-600">
+                Helps vinyl collectors track records they want to buy with 24/7 automatic monitoring 
+                of Discogs marketplace. Manage your wantlist, get instant Telegram notifications 
+                when desired records become available, and never miss rare pressings or limited 
+                editions again.
+              </p>
             </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500">
-              <a 
-                href="https://gotwifi.vicent.io" 
-                className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Gotwifi (opens in new tab)"
-              >
-                Gotwifi
-              </a>{" "}
-              is an application that enhances the WiFi sharing experience by using
-              QR codes. It allows you to easily share your WiFi connection with
-              family or guests, adding a personal touch with your favorite photos.
-              Forget about confusing network names and complicated passwords; just
-              scan and connect instantly.
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a 
+                  href="https://gotwifi.vicent.io" 
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Gotwifi (opens in new tab)"
+                >
+                  Gotwifi
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2023 • React, QR Generation</span>
+              </div>
+              <p className="text-gray-600">
+                An application that enhances the WiFi sharing experience by using
+                QR codes. It allows you to easily share your WiFi connection with
+                family or guests, adding a personal touch with your favorite photos.
+                Forget about confusing network names and complicated passwords; just
+                scan and connect instantly.
+              </p>
             </div>
           </div>
         </article>
 
         <section className="flex flex-col gap-6">
-          <h2 className="font-medium text-gray-800">Contact</h2>
+          <h2 className="text-lg font-medium text-gray-800">Contact</h2>
           <address className="border border-gray-300 p-4 not-italic" style={{backgroundColor: 'rgba(0,0,0,0.02)'}}>
-            <p className="mb-4">→ <a href="mailto:hello@vicent.io" className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1">hello@vicent.io</a></p>
-            <p>Available for interesting projects and collaborations.</p>
+            <div className="mb-4">
+              <span className="mr-3">→</span>
+              <a 
+                href="mailto:hello@vicent.io" 
+                className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+              >
+                hello@vicent.io
+              </a>
+            </div>
+            <p className="text-gray-600 pl-6">Available for interesting projects and collaborations.</p>
           </address>
         </section>
 
         <article className="flex flex-col gap-6">
-          <h2 className="font-medium text-gray-800">More</h2>
+          <h2 className="text-lg font-medium text-gray-800">More</h2>
           <p>
             You can check my code on{" "}
             <a
