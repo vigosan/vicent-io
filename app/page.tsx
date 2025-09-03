@@ -5,8 +5,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Vicent Gozalbes",
-    jobTitle: "Web Engineer",
-    description: "Full-stack web developer specializing in React and frontend technologies",
+    jobTitle: "Web Engineer & UX Expert",
+    description: "Full-stack web developer and usability expert specializing in React, user experience design, and creating intuitive interfaces",
     url: "https://vicent.io",
     email: "hello@vicent.io",
     sameAs: [
@@ -30,7 +30,11 @@ export default function Home() {
       "TypeScript",
       "Full-Stack Development",
       "Frontend Development",
-      "Web Development"
+      "Web Development",
+      "User Experience Design",
+      "Usability Testing",
+      "Interface Design",
+      "User Research"
     ]
   };
 
@@ -47,7 +51,7 @@ export default function Home() {
             Vicent Gozalbes
           </h1>
         </Link>
-        <span className="text-gray-500">Web Engineer</span>
+        <span className="text-gray-500">Web Engineer & UX Expert</span>
       </header>
 
       <main className="flex flex-col gap-8 lg:gap-12">
@@ -64,8 +68,9 @@ export default function Home() {
             >
               Flywire
             </a>{" "}
-            as a full-stack developer with a specific passion for the frontend,
-            contributing to several projects built in React.
+            as a full-stack developer with expertise in usability and user experience. 
+            I focus on creating intuitive interfaces and optimizing user flows, 
+            contributing to several React-based projects with a user-centered approach.
           </p>
         </article>
 

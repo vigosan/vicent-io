@@ -5,9 +5,9 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Vicent Gozalbes - Web Engineer & Full-Stack Developer",
-  description: "Full-stack web developer specializing in React and frontend technologies. Currently at Flywire, previously Tech Lead at Strands. Based in Spain, available for interesting projects.",
-  keywords: ["Vicent Gozalbes", "Web Engineer", "Full-Stack Developer", "React Developer", "Frontend Developer", "JavaScript", "TypeScript", "Flywire", "Strands"],
+  title: "Vicent Gozalbes - Web Engineer & UX Expert",
+  description: "Full-stack web developer and usability expert specializing in React, user experience design, and creating intuitive interfaces. Currently at Flywire, previously Tech Lead at Strands.",
+  keywords: ["Vicent Gozalbes", "Web Engineer", "UX Expert", "Usability", "Full-Stack Developer", "React Developer", "User Experience", "Interface Design", "Frontend Developer", "JavaScript", "TypeScript", "Flywire", "Strands"],
   authors: [{ name: "Vicent Gozalbes" }],
   creator: "Vicent Gozalbes",
   openGraph: {
