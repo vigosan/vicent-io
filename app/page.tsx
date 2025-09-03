@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-6 py-12 text-gray-500 antialiased lg:gap-24 lg:px-24 lg:py-16">
-      <header className="flex  flex-col justify-between">
-        <Link href="/">
+    <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-6 py-12 text-gray-500 antialiased lg:gap-24 lg:px-24 lg:py-16" style={{fontFamily: 'monospace'}}>
+      <header className="flex flex-col justify-between">
+        <Link href="/" className="focus:outline-none focus:ring-1 focus:ring-gray-400 rounded">
           <h1 className="font-medium tracking-wide text-gray-800">
             Vicent Gozalbes
           </h1>
@@ -12,15 +12,17 @@ export default function Home() {
         <span className="text-gray-500">Web Engineer</span>
       </header>
 
-      <main className="flex flex-col gap-12 lg:gap-24">
+      <main className="flex flex-col gap-8 lg:gap-12">
         <article className="flex flex-col gap-6">
           <h2 className="font-medium text-gray-800">Today</h2>
           <p>
             I work at{" "}
             <a
               href="https://www.flywire.com"
-              className="underline font-medium"
+              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Flywire (opens in new tab)"
             >
               Flywire
             </a>{" "}
@@ -35,8 +37,10 @@ export default function Home() {
             As the Tech Lead at{" "}
             <a
               href="https://www.strands.com"
-              className="underline font-medium"
+              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Strands (opens in new tab)"
             >
               Strands
             </a>
@@ -48,8 +52,14 @@ export default function Home() {
         <article className="flex flex-col gap-6">
           <h2 className="font-medium text-gray-800">Projects</h2>
           <div className="flex flex-col gap-4">
-            <div>
-              <a href="https://discospy.app" className="font-medium underline">
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500">
+              <a 
+                href="https://discospy.app" 
+                className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="DiscoSpy (opens in new tab)"
+              >
                 DiscoSpy
               </a>{" "}
               helps vinyl collectors track records they want to buy with 24/7 automatic monitoring 
@@ -57,8 +67,14 @@ export default function Home() {
               when desired records become available, and never miss rare pressings or limited 
               editions again.
             </div>
-            <div>
-              <a href="https://gotwifi.vicent.io" className="font-medium underline">
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500">
+              <a 
+                href="https://gotwifi.vicent.io" 
+                className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Gotwifi (opens in new tab)"
+              >
                 Gotwifi
               </a>{" "}
               is an application that enhances the WiFi sharing experience by using
@@ -71,13 +87,23 @@ export default function Home() {
         </article>
 
         <article className="flex flex-col gap-6">
+          <h2 className="font-medium text-gray-800">Contact</h2>
+          <div className="border border-gray-300 p-4" style={{backgroundColor: 'rgba(0,0,0,0.02)'}}>
+            <p className="mb-4">→ <a href="mailto:hello@vicent.io" className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1">hello@vicent.io</a></p>
+            <p>Available for interesting projects and collaborations.</p>
+          </div>
+        </article>
+
+        <article className="flex flex-col gap-6">
           <h2 className="font-medium text-gray-800">More</h2>
           <p>
             You can check my code on{" "}
             <a
               href="https://github.com/vigosan"
-              className="underline font-medium"
+              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub (opens in new tab)"
             >
               GitHub
             </a>{" "}
@@ -85,16 +111,20 @@ export default function Home() {
             sessions on{" "}
             <a
               href="https://www.twitch.tv/vigosan"
-              className="underline font-medium"
+              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitch (opens in new tab)"
             >
               Twitch
             </a>{" "}
             or{" "}
             <a
               href="https://www.instagram.com/vigosan"
-              className="underline font-medium"
+              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram (opens in new tab)"
             >
               Instagram
             </a>
