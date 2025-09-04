@@ -68,8 +68,8 @@ export default function Home() {
             >
               Flywire
             </a>{" "}
-            as a full-stack developer with expertise in usability and user experience. 
-            I focus on creating intuitive interfaces and optimizing user flows, 
+            as a full-stack developer with expertise in usability and user experience.
+            I focus on creating intuitive interfaces and optimizing user flows,
             contributing to several React-based projects with a user-centered approach.
           </p>
         </article>
@@ -97,8 +97,8 @@ export default function Home() {
           <div className="flex flex-col gap-4">
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
-                <a 
-                  href="https://discospy.app" 
+                <a
+                  href="https://discospy.app"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -109,19 +109,17 @@ export default function Home() {
                 <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2024 • Next.js, React, TypeScript</span>
               </div>
               <p className="text-gray-600">
-                Helps vinyl collectors track records they want to buy with 24/7 automatic monitoring 
-                of Discogs marketplace. Manage your wantlist, get instant Telegram notifications 
-                when desired records become available, and never miss rare pressings or limited 
+                Helps vinyl collectors track records they want to buy with 24/7 automatic monitoring
+                of Discogs marketplace. Manage your wantlist, get instant Telegram notifications
+                when desired records become available, and never miss rare pressings or limited
                 editions again.
               </p>
             </div>
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
-                <a 
-                  href="https://gotwifi.vicent.io" 
+                <a
+                  href="https://gotwifi.vicent.io"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="Gotwifi (opens in new tab)"
                 >
                   Gotwifi
@@ -144,8 +142,8 @@ export default function Home() {
           <address className="border border-gray-300 p-4 not-italic" style={{backgroundColor: 'rgba(0,0,0,0.02)'}}>
             <div className="mb-4">
               <span className="mr-3">→</span>
-              <a 
-                href="mailto:hello@vicent.io" 
+              <a
+                href="mailto:hello@vicent.io"
                 className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
               >
                 hello@vicent.io
