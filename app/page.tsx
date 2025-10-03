@@ -98,6 +98,25 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
+                  href="https://adjxativa.com"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ADJ Xàtiva (opens in new tab)"
+                >
+                  ADJ Xàtiva
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • Next.js, React, TypeScript</span>
+              </div>
+              <p className="text-gray-600">
+                Complete DJ association management platform that ensures fair event distribution among DJs through automated assignment workflows.
+                Features dual-channel notifications (Email + Telegram), comprehensive event management, and customizable DJ press kits with public profiles.
+                Built as a monorepo with three specialized Next.js applications for public, admin, and DJ interfaces.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
                   href="https://discospy.app"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
