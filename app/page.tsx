@@ -98,6 +98,26 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
+                  href="https://onnme.app"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Onnme (opens in new tab)"
+                >
+                  Onnme
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • Next.js, React, TypeScript, PostgreSQL, Stripe</span>
+              </div>
+              <p className="text-gray-600">
+                Modern restaurant order and payment system featuring QR code ordering, real-time kitchen display, and integrated Stripe payments.
+                Customers scan QR codes to browse menus, order, and pay instantly without downloads. Dashboard provides menu management,
+                order tracking with Kanban board, analytics, and multi-tenant support via subdomains. Built as a Turborepo monorepo with
+                customer PWA and restaurant dashboard applications.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
                   href="https://adjxativa.com"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
