@@ -98,6 +98,24 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
+                  href="https://mixxo.io"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Mixxo (opens in new tab)"
+                >
+                  Mixxo
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • Next.js, React, TypeScript, Supabase, Stripe, PostgreSQL, PostGIS</span>
+              </div>
+              <p className="text-gray-600">
+                SaaS platform for DJs to create, manage and share professional press kits. Features geographic search with PostGIS,
+                public profiles, downloadable press kits with photos and QR codes, and analytics dashboard. Built as a Turborepo monorepo with separate public site and DJ dashboard applications.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
                   href="https://onnme.app"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
