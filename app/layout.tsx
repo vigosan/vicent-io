@@ -47,8 +47,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={GeistSans.variable}>{children}</body>
-      <Analytics />
+      <body className={GeistSans.variable}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
