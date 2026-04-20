@@ -155,6 +155,25 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
+                  href="https://welist.io"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Welist (opens in new tab)"
+                >
+                  Welist
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • React, TypeScript, Hono, Drizzle, Neon</span>
+              </div>
+              <p className="text-gray-600">
+                A collaborative list-making app for sharing, exploring, and completing bucket lists together.
+                Supports public and collaborative modes, challenger progress tracking, geocoded places,
+                and an interactive map view.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
                   href="https://discospy.app"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
