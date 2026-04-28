@@ -163,12 +163,12 @@ export default function Home() {
                 >
                   Welist
                 </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • React, TypeScript, Hono, Drizzle, Neon</span>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • React 19, TypeScript, Hono, Drizzle, Neon, TanStack Query/Router, Leaflet, Stripe</span>
               </div>
               <p className="text-gray-600">
-                A collaborative list-making app for sharing, exploring, and completing bucket lists together.
-                Supports public and collaborative modes, challenger progress tracking, geocoded places,
-                and an interactive map view.
+                Collaborative bucket list app for creating, sharing, and completing lists together.
+                Features public and collaborative modes, challenger progress tracking, geocoded places with
+                interactive map view, internationalization, and Stripe-powered premium features.
               </p>
             </div>
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
