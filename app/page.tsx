@@ -98,6 +98,44 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
+                  href="https://welist.io"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Welist (opens in new tab)"
+                >
+                  Welist
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • React 19, TypeScript, Hono, Drizzle, Neon, TanStack Query/Router, Leaflet, Stripe</span>
+              </div>
+              <p className="text-gray-600">
+                Collaborative bucket list app for creating, sharing, and completing lists together.
+                Features public and collaborative modes, challenger progress tracking, geocoded places with
+                interactive map view, internationalization, and Stripe-powered premium features.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
+                  href="https://github.com/vigosan/surco"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Surco (opens in new tab)"
+                >
+                  Surco
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • Electron, React 19, TypeScript, Tailwind, ffmpeg</span>
+              </div>
+              <p className="text-gray-600">
+                Desktop app for DJs to organize and prepare their audio tracks. Features waveform and spectrogram
+                visualization, cutoff detection, audio conversion via ffmpeg, Discogs and Apple Music metadata enrichment,
+                and a keyboard-driven command palette. Built as a monorepo with an Electron desktop app and a Vite product site.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
                   href="https://mixxo.io"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
@@ -116,7 +154,7 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
-                  href="https://onnme.app"
+                  href="https://github.com/vigosan/onnme-app"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -131,44 +169,6 @@ export default function Home() {
                 Customers scan QR codes to browse menus, order, and pay instantly without downloads. Dashboard provides menu management,
                 order tracking with Kanban board, analytics, and multi-tenant support via subdomains. Built as a Turborepo monorepo with
                 customer PWA and restaurant dashboard applications.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://adjxativa.com"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="ADJ Xàtiva (opens in new tab)"
-                >
-                  ADJ Xàtiva
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • Next.js, React, TypeScript</span>
-              </div>
-              <p className="text-gray-600">
-                Complete DJ association management platform that ensures fair event distribution among DJs through automated assignment workflows.
-                Features dual-channel notifications (Email + Telegram), comprehensive event management, and customizable DJ press kits with public profiles.
-                Built as a monorepo with three specialized Next.js applications for public, admin, and DJ interfaces.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://welist.io"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Welist (opens in new tab)"
-                >
-                  Welist
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • React 19, TypeScript, Hono, Drizzle, Neon, TanStack Query/Router, Leaflet, Stripe</span>
-              </div>
-              <p className="text-gray-600">
-                Collaborative bucket list app for creating, sharing, and completing lists together.
-                Features public and collaborative modes, challenger progress tracking, geocoded places with
-                interactive map view, internationalization, and Stripe-powered premium features.
               </p>
             </div>
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
