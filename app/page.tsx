@@ -98,6 +98,25 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
+                  href="https://getsurco.app"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Surco (opens in new tab)"
+                >
+                  Surco
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • Electron, React 19, TypeScript, Tailwind, ffmpeg</span>
+              </div>
+              <p className="text-gray-600">
+                Desktop app for DJs to organize and prepare their audio tracks. Features waveform and spectrogram
+                visualization, cutoff detection, audio conversion via ffmpeg, Discogs and Apple Music metadata enrichment,
+                and a keyboard-driven command palette. Built as a monorepo with an Electron desktop app and a Vite product site.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
                   href="https://welist.io"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
@@ -112,25 +131,6 @@ export default function Home() {
                 Collaborative bucket list app for creating, sharing, and completing lists together.
                 Features public and collaborative modes, challenger progress tracking, geocoded places with
                 interactive map view, internationalization, and Stripe-powered premium features.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://github.com/vigosan/surco"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Surco (opens in new tab)"
-                >
-                  Surco
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • Electron, React 19, TypeScript, Tailwind, ffmpeg</span>
-              </div>
-              <p className="text-gray-600">
-                Desktop app for DJs to organize and prepare their audio tracks. Features waveform and spectrogram
-                visualization, cutoff detection, audio conversion via ffmpeg, Discogs and Apple Music metadata enrichment,
-                and a keyboard-driven command palette. Built as a monorepo with an Electron desktop app and a Vite product site.
               </p>
             </div>
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
