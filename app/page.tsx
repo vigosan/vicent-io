@@ -98,6 +98,26 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
+                  href="https://oh-my-dj.vicent.io"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Oh My DJ (opens in new tab)"
+                >
+                  Oh My DJ
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • C++, Qt, OBS, libobs</span>
+              </div>
+              <p className="text-gray-600">
+                An OBS plugin that makes life simple for DJs: a single dock to rotate cameras and scenes
+                on a timer, and one-click multistreaming to several platforms at once. It reuses OBS&apos;s own
+                encoder for zero extra CPU and replaces the heavyweight obs-multi-rtmp and Advanced Scene
+                Switcher setup with one focused, friendly panel.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
                   href="https://getsurco.app"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
