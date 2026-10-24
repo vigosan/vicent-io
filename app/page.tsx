@@ -98,6 +98,26 @@ export default function Home() {
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
               <div className="mb-2">
                 <a
+                  href="https://cuts.vicent.io"
+                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Cuts (opens in new tab)"
+                >
+                  Cuts
+                </a>
+                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • Electron, React 19, TypeScript, Tailwind, FFmpeg</span>
+              </div>
+              <p className="text-gray-600">
+                A Mac app that turns a long DJ session recording into short clips for an Instagram carousel.
+                Mark clips while you listen, fine-tune them on a zoomable timeline, pick fades and Instagram
+                crops per clip, and export them all at once in carousel order, entirely on the Mac with a
+                bundled FFmpeg.
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div className="mb-2">
+                <a
                   href="https://oh-my-dj.vicent.io"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
                   target="_blank"
