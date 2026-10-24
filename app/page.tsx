@@ -109,10 +109,10 @@ export default function Home() {
                 <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • Electron, React 19, TypeScript, Tailwind, FFmpeg</span>
               </div>
               <p className="text-gray-600">
-                A Mac app that turns a long DJ session recording into short clips for an Instagram carousel.
-                Mark clips while you listen, fine-tune them on a zoomable timeline, pick fades and Instagram
-                crops per clip, and export them all at once in carousel order, entirely on the Mac with a
-                bundled FFmpeg.
+                A Mac app that turns any long video into short clips for an Instagram carousel. Mark clips
+                while you listen, fine-tune them on a timeline with video frames and the audio waveform, pick
+                fades and Instagram crops per clip, and export them all at once in carousel order, entirely
+                on the Mac with a bundled FFmpeg.
               </p>
             </div>
             <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
