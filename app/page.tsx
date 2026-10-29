@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { projects } from "./projects";
 
 export default function Home() {
   const structuredData = {
@@ -95,163 +96,23 @@ export default function Home() {
         <article className="flex flex-col gap-6">
           <h2 className="text-lg font-medium text-gray-800">Projects</h2>
           <div className="flex flex-col gap-4">
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://cuts.vicent.io"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Cuts (opens in new tab)"
-                >
-                  Cuts
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • Electron, React 19, TypeScript, Tailwind, FFmpeg</span>
+            {projects.map((project) => (
+              <div key={project.slug} className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+                <div className="mb-2">
+                  <a
+                    href={project.url}
+                    className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${project.name} (opens in new tab)`}
+                  >
+                    {project.name}
+                  </a>
+                  <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">{project.year} • {project.stack.join(", ")}</span>
+                </div>
+                <p className="text-gray-600">{project.description}</p>
               </div>
-              <p className="text-gray-600">
-                A Mac app that turns any long video into short clips for an Instagram carousel. Mark clips
-                while you listen, fine-tune them on a timeline with video frames and the audio waveform, pick
-                fades and Instagram crops per clip, and export them all at once in carousel order, entirely
-                on the Mac with a bundled FFmpeg.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://oh-my-dj.vicent.io"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Oh My DJ (opens in new tab)"
-                >
-                  Oh My DJ
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • C++, Qt, OBS, libobs</span>
-              </div>
-              <p className="text-gray-600">
-                An OBS plugin that makes life simple for DJs: a single dock to rotate cameras and scenes
-                on a timer, and one-click multistreaming to several platforms at once. It reuses OBS&apos;s own
-                encoder for zero extra CPU and replaces the heavyweight obs-multi-rtmp and Advanced Scene
-                Switcher setup with one focused, friendly panel.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://getsurco.app"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Surco (opens in new tab)"
-                >
-                  Surco
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • Electron, React 19, TypeScript, Tailwind, ffmpeg</span>
-              </div>
-              <p className="text-gray-600">
-                Desktop app for DJs to organize and prepare their audio tracks. Features waveform and spectrogram
-                visualization, cutoff detection, audio conversion via ffmpeg, Discogs and Apple Music metadata enrichment,
-                and a keyboard-driven command palette. Built as a monorepo with an Electron desktop app and a Vite product site.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://welist.io"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Welist (opens in new tab)"
-                >
-                  Welist
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2026 • React 19, TypeScript, Hono, Drizzle, Neon, TanStack Query/Router, Leaflet, Stripe</span>
-              </div>
-              <p className="text-gray-600">
-                Collaborative bucket list app for creating, sharing, and completing lists together.
-                Features public and collaborative modes, challenger progress tracking, geocoded places with
-                interactive map view, internationalization, and Stripe-powered premium features.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://mixxo.io"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Mixxo (opens in new tab)"
-                >
-                  Mixxo
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • Next.js, React, TypeScript, Supabase, Stripe, PostgreSQL, PostGIS</span>
-              </div>
-              <p className="text-gray-600">
-                SaaS platform for DJs to create, manage and share professional press kits. Features geographic search with PostGIS,
-                public profiles, downloadable press kits with photos and QR codes, and analytics dashboard. Built as a Turborepo monorepo with separate public site and DJ dashboard applications.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://github.com/vigosan/onnme-app"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Onnme (opens in new tab)"
-                >
-                  Onnme
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2025 • Next.js, React, TypeScript, PostgreSQL, Stripe</span>
-              </div>
-              <p className="text-gray-600">
-                Modern restaurant order and payment system featuring QR code ordering, real-time kitchen display, and integrated Stripe payments.
-                Customers scan QR codes to browse menus, order, and pay instantly without downloads. Dashboard provides menu management,
-                order tracking with Kanban board, analytics, and multi-tenant support via subdomains. Built as a Turborepo monorepo with
-                customer PWA and restaurant dashboard applications.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://discospy.app"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="DiscoSpy (opens in new tab)"
-                >
-                  DiscoSpy
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2024 • Next.js, React, TypeScript</span>
-              </div>
-              <p className="text-gray-600">
-                Helps vinyl collectors track records they want to buy with 24/7 automatic monitoring
-                of Discogs marketplace. Manage your wantlist, get instant Telegram notifications
-                when desired records become available, and never miss rare pressings or limited
-                editions again.
-              </p>
-            </div>
-            <div className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
-              <div className="mb-2">
-                <a
-                  href="https://gotwifi.vicent.io"
-                  className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Gotwifi (opens in new tab)"
-                >
-                  Gotwifi
-                </a>
-                <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">2023 • React, QR Generation</span>
-              </div>
-              <p className="text-gray-600">
-                An application that enhances the WiFi sharing experience by using
-                QR codes. It allows you to easily share your WiFi connection with
-                family or guests, adding a personal touch with your favorite photos.
-                Forget about confusing network names and complicated passwords; just
-                scan and connect instantly.
-              </p>
-            </div>
+            ))}
           </div>
         </article>
 
