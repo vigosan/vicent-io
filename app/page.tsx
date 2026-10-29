@@ -99,14 +99,20 @@ export default function Home() {
             {projects.map((project) => (
               <div key={project.slug} className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
                 <div className="mb-2">
-                  <a
-                    href={project.url}
+                  <Link
+                    href={`/projects/${project.slug}`}
                     className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${project.name} (opens in new tab)`}
                   >
                     {project.name}
+                  </Link>
+                  <a
+                    href={project.url}
+                    className="hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit ${project.name} (opens in new tab)`}
+                  >
+                    ↗
                   </a>
                   <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">{project.year} • {project.stack.join(", ")}</span>
                 </div>
