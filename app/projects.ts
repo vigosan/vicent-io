@@ -81,3 +81,21 @@ export const projects: Project[] = [
       "An application that enhances the WiFi sharing experience by using QR codes. It allows you to easily share your WiFi connection with family or guests, adding a personal touch with your favorite photos. Forget about confusing network names and complicated passwords; just scan and connect instantly.",
   },
 ];
+
+export function projectStructuredData(project: Project) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: project.name,
+    description: project.description,
+    url: project.url,
+    mainEntityOfPage: `https://vicent.io/projects/${project.slug}`,
+    datePublished: String(project.year),
+    keywords: project.stack.join(", "),
+    author: {
+      "@type": "Person",
+      name: "Vicent Gozalbes",
+      url: "https://vicent.io",
+    },
+  };
+}
