@@ -236,6 +236,8 @@ export default function Home() {
                 <a
                   href="https://gotwifi.vicent.io"
                   className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Gotwifi (opens in new tab)"
                 >
                   Gotwifi
