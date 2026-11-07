@@ -9,6 +9,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "tracklist",
+    name: "Tracklist",
+    url: "https://github.com/vigosan/tracklist",
+    year: 2026,
+    stack: ["Python", "yt-dlp", "FFmpeg", "Shazam", "YouTube Data API"],
+    description:
+      "A command-line tool that builds a timestamped tracklist for a YouTube video, like a DJ set, a mix or a radio show. It reads the song, artist and exact position from YouTube's Content ID claims, uploading a private copy to your channel when the video is someone else's, and fills the gaps with Shazam, marking uncertain matches and listing whatever stays unidentified.",
+  },
+  {
     slug: "cuts",
     name: "Cuts",
     url: "https://cuts.vicent.io",
