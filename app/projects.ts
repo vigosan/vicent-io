@@ -9,6 +9,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "nada",
+    name: "Nada",
+    url: "https://nada-cyan-nu.vercel.app",
+    year: 2026,
+    stack: ["Swift", "AppKit", "WebKit", "Next.js"],
+    description:
+      "A keyboard-driven browser for Mac with nothing on it. Everything goes through a command palette: open pages, switch tabs, split them into panes and jump between bookmarks and history without touching the mouse. It blocks ads and trackers with compiled filter lists, follows links with vim-style hints, and reads its shortcuts, themes and fonts from a Ghostty-style config file that reloads live.",
+  },
+  {
     slug: "tracklist",
     name: "Tracklist",
     url: "https://github.com/vigosan/tracklist",
