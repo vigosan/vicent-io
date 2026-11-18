@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     slug: "nada",
     name: "Nada",
-    url: "https://nada-cyan-nu.vercel.app",
+    url: "https://nada.vicent.io",
     year: 2026,
     stack: ["Swift", "AppKit", "WebKit", "Next.js"],
     description:
