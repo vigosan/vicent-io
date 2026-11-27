@@ -45,24 +45,24 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-    <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-6 py-12 text-gray-500 antialiased lg:gap-24 lg:px-24 lg:py-16" style={{fontFamily: 'monospace'}}>
+    <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-6 py-12 text-muted antialiased lg:gap-24 lg:px-24 lg:py-16">
       <header className="flex flex-col justify-between">
-        <Link href="/" className="focus:outline-none focus:ring-1 focus:ring-gray-400 rounded">
-          <h1 className="font-medium tracking-wide text-gray-800">
+        <Link href="/" className="link">
+          <h1 className="font-medium text-ink">
             Vicent Gozalbes
           </h1>
         </Link>
-        <span className="text-gray-500">Web Engineer & UX Expert</span>
+        <span className="text-muted">Web Engineer & UX Expert</span>
       </header>
 
       <main className="flex flex-col gap-8 lg:gap-12">
         <article className="flex flex-col gap-6">
-          <h2 className="text-lg font-medium text-gray-800">Today</h2>
+          <h2 className="text-lg font-medium text-ink">Today</h2>
           <p>
             I work at{" "}
             <a
               href="https://www.flywire.com"
-              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+              className="underline font-medium link px-1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Flywire (opens in new tab)"
@@ -76,12 +76,12 @@ export default function Home() {
         </article>
 
         <article className="flex flex-col gap-6">
-          <h2 className="text-lg font-medium text-gray-800">Previously</h2>
+          <h2 className="text-lg font-medium text-ink">Previously</h2>
           <p>
             As the Tech Lead at{" "}
             <a
               href="https://www.strands.com"
-              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+              className="underline font-medium link px-1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Strands (opens in new tab)"
@@ -94,57 +94,57 @@ export default function Home() {
         </article>
 
         <article className="flex flex-col gap-6">
-          <h2 className="text-lg font-medium text-gray-800">Projects</h2>
+          <h2 className="text-lg font-medium text-ink">Projects</h2>
           <div className="flex flex-col gap-4">
             {projects.map((project) => (
-              <div key={project.slug} className="border-l-2 border-gray-300 pl-4 hover:border-gray-500 sm:pl-6">
+              <div key={project.slug} className="border-l-2 border-line pl-4 hover:border-line-strong sm:pl-6">
                 <div className="mb-2">
                   <Link
                     href={`/projects/${project.slug}`}
-                    className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                    className="font-medium underline link px-1"
                   >
                     {project.name}
                   </Link>
                   <a
                     href={project.url}
-                    className="hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                    className="link px-1"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Visit ${project.name} (opens in new tab)`}
                   >
                     ↗
                   </a>
-                  <span className="ml-3 text-sm text-gray-400 block sm:inline mt-1 sm:mt-0">{project.year} • {project.stack.join(", ")}</span>
+                  <span className="ml-3 text-sm text-faint block sm:inline mt-1 sm:mt-0">{project.year} • {project.stack.join(", ")}</span>
                 </div>
-                <p className="text-gray-600">{project.description}</p>
+                <p className="text-body">{project.description}</p>
               </div>
             ))}
           </div>
         </article>
 
         <section className="flex flex-col gap-6">
-          <h2 className="text-lg font-medium text-gray-800">Contact</h2>
-          <address className="border border-gray-300 p-4 not-italic" style={{backgroundColor: 'rgba(0,0,0,0.02)'}}>
+          <h2 className="text-lg font-medium text-ink">Contact</h2>
+          <address className="border border-line p-4 not-italic" style={{backgroundColor: 'rgba(0,0,0,0.02)'}}>
             <div className="mb-4">
               <span className="mr-3">→</span>
               <a
                 href="mailto:hello@vicent.io"
-                className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                className="font-medium underline link px-1"
               >
                 hello@vicent.io
               </a>
             </div>
-            <p className="text-gray-600 pl-6">Available for interesting projects and collaborations.</p>
+            <p className="text-body pl-6">Available for interesting projects and collaborations.</p>
           </address>
         </section>
 
         <article className="flex flex-col gap-6">
-          <h2 className="text-lg font-medium text-gray-800">More</h2>
+          <h2 className="text-lg font-medium text-ink">More</h2>
           <p>
             You can check my code on{" "}
             <a
               href="https://github.com/vigosan"
-              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+              className="underline font-medium link px-1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub (opens in new tab)"
@@ -155,7 +155,7 @@ export default function Home() {
             sessions on{" "}
             <a
               href="https://www.twitch.tv/vigosan"
-              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+              className="underline font-medium link px-1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitch (opens in new tab)"
@@ -165,7 +165,7 @@ export default function Home() {
             or{" "}
             <a
               href="https://www.instagram.com/vigosan"
-              className="underline font-medium hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+              className="underline font-medium link px-1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram (opens in new tab)"

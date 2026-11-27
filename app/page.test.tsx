@@ -17,4 +17,16 @@ describe("home page", () => {
       expect(html).toContain(`href="${url}"`);
     }
   });
+
+  it("gives every link the shared link style so they all respond the same to hover, press and keyboard focus", () => {
+    const anchors = html.match(/<a [^>]*>/g)!;
+
+    for (const anchor of anchors) {
+      expect(anchor).toMatch(/class="[^"]*\blink\b/);
+    }
+  });
+
+  it("takes its typeface from the theme instead of an inline style, so every system renders the same monospace", () => {
+    expect(html).not.toContain("font-family");
+  });
 });

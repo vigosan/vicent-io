@@ -1,3 +1,4 @@
+import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { projects } from "@/app/projects";
 import ProjectPage, { generateMetadata, generateStaticParams } from "./page";
@@ -32,5 +33,20 @@ describe("project page", () => {
 
   it("returns a 404 for unknown projects instead of an empty indexable page", async () => {
     await expect(ProjectPage(params("missing"))).rejects.toThrow("NEXT_HTTP_ERROR_FALLBACK;404");
+  });
+
+  it("gives every link the shared link style so it matches the home page", async () => {
+    const html = renderToStaticMarkup(await ProjectPage(params("cuts")));
+    const anchors = html.match(/<a [^>]*>/g)!;
+
+    for (const anchor of anchors) {
+      expect(anchor).toMatch(/class="[^"]*\blink\b/);
+    }
+  });
+
+  it("takes its typeface from the theme instead of an inline style, like the home page", async () => {
+    const html = renderToStaticMarkup(await ProjectPage(params("cuts")));
+
+    expect(html).not.toContain("font-family");
   });
 });

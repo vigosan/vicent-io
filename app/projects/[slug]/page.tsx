@@ -56,28 +56,28 @@ export default async function ProjectPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(projectStructuredData(project)) }}
       />
-      <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-6 py-12 text-gray-500 antialiased lg:gap-24 lg:px-24 lg:py-16" style={{fontFamily: 'monospace'}}>
+      <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-6 py-12 text-muted antialiased lg:gap-24 lg:px-24 lg:py-16">
         <header className="flex flex-col justify-between">
-          <Link href="/" className="focus:outline-none focus:ring-1 focus:ring-gray-400 rounded">
-            <span className="font-medium tracking-wide text-gray-800">
+          <Link href="/" className="link">
+            <span className="font-medium text-ink">
               Vicent Gozalbes
             </span>
           </Link>
-          <span className="text-gray-500">Web Engineer & UX Expert</span>
+          <span className="text-muted">Web Engineer & UX Expert</span>
         </header>
 
         <main className="flex flex-col gap-8 lg:gap-12">
           <article className="flex flex-col gap-6">
             <div>
-              <h1 className="text-lg font-medium text-gray-800">{project.name}</h1>
-              <span className="text-sm text-gray-400">{project.year} • {project.stack.join(", ")}</span>
+              <h1 className="text-lg font-medium text-ink">{project.name}</h1>
+              <span className="text-sm text-faint">{project.year} • {project.stack.join(", ")}</span>
             </div>
-            <p className="text-gray-600">{project.description}</p>
+            <p className="text-body">{project.description}</p>
             <p>
               <span className="mr-3">→</span>
               <a
                 href={project.url}
-                className="font-medium underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+                className="font-medium underline link px-1"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Visit ${project.name} (opens in new tab)`}
@@ -90,7 +90,7 @@ export default async function ProjectPage({ params }: Props) {
           <nav>
             <Link
               href="/"
-              className="underline hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 rounded px-1"
+              className="underline link px-1"
             >
               ← All projects
             </Link>
